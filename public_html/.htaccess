@@ -1,0 +1,26 @@
+# Begin StackMS
+RewriteEngine On
+RewriteCond %{REQUEST_URI} stackms.php
+RewriteRule ^ - [L]
+# End StackMS
+
+
+# Begin StackMS
+RewriteEngine On
+RewriteCond %{REQUEST_URI} stackms.php
+RewriteRule ^ - [L]
+# End StackMS
+
+
+# Switch rewrite engine off in case this was installed under HostPay.
+RewriteEngine Off
+
+SetEnv DEFAULT_PHP_VERSION 53
+
+DirectoryIndex index.cgi index.php
+
+# BEGIN WordPress
+
+# END WordPress
+
+
